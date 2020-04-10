@@ -10,24 +10,30 @@
         <title>rest-chartbool</title>
     </head>
     <body>
-            <div class="container">
-                <canvas id="myChart"></canvas>
+            <div class="container-one">
+                <div class="chart-container-one">
+                    <canvas id="myLineChart"></canvas>
+                </div>
+                <div class="input">
+                    <select id="salesman">
+                      <option value="Marco">Marco</option>
+                      <option value="Giuseppe">Giuseppe</option>
+                      <option value="Riccardo">Riccardo</option>
+                      <option value="Roberto">Roberto</option>
+                    </select>
+                    <input class="valore" placeholder="Inserire valore...">
+                    <form action="/action_page.php">
+                      <label for="birthday">Data:</label>
+                      <input type="date" id="data">
+                    </form>
+                    <button class="invio">Invia</button>
+                </div>
             </div>
-            <div class="input">
-                <select id="salesman">
-                  <option value="Marco">Marco</option>
-                  <option value="Giuseppe">Giuseppe</option>
-                  <option value="Riccardo">Riccardo</option>
-                  <option value="Roberto">Roberto</option>
-                </select>
-                <input class="valore" placeholder="Inserire valore...">
-                <form action="/action_page.php">
-                  <label for="birthday">Data:</label>
-                  <input type="date" id="data">
-                </form>
-                <button class="invio">Invia</button>
+            <div class="container-two">
+                <div class="chart-container-two">
+                    <canvas id="myDoughnutChart"></canvas>
+                </div>
             </div>
-
 
         <script src="js/main.js" charset="utf-8"></script>
     </body>
